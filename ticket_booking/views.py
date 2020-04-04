@@ -1,5 +1,5 @@
 from django.shortcuts import render,get_object_or_404
-from .forms import MovieDetailFor
+from .forms import MovieDetailForm
 from .models import MovieDetails
 
 # Create your views here.
