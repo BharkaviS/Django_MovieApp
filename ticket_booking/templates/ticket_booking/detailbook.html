@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>detail</title>
+
+  </head>
+  <body>
+
+
+    <table align="center">
+      <form method="POST" action=''>
+        {% csrf_token %}
+      <tr >
+        <td><img src ="{{ obj.image.url }}" style = "  height:10vw;border:10px "/></td>
+        <td style="font-size:20px"><b>Movie Title:{{obj.title}}</b></td>
+
+      </tr>
+
+      <tr>
+        <td><b>Synopsis</b></td>
+        <td>{{obj.description}}</td>
+      </tr>
+      <tr>
+        <td><b>Show Timing:</b></td>
+
+        <td><select name="timing">
+          <option value="morn">{{obj.show_timing1}}</option>
+          <option value="even">{{obj.show_timing2}}</option></select></td>
+      </tr>
+      <tr>
+        <td><b>Price:</b></td>
+        <td>{{ obj.price }}</td>
+      </tr>
+    <tr>
+      <td><b>Enter the number of tickets to be booked:</b></td>
+      <td><input type ="number" name='tickets' max="5"></td>
+    </tr>
+    <tr>
+    <td><button class="btn btn-primary" href="#">Book tickets</button></td>
+  </tr>
+
+
+
+    </form>
+</table>
+  {% if obj.Tickets_available == 0 %}
+  <div class="alert alert-danger" role="alert">
+    <h3>Tickets are full!!</h3>
+  </div>
+  {% else %}
+  <div class="alert alert-primary" role="alert">
+    <h3>You have to pay Rs. {{obj.Tickets_totprice}}</h3>
+  </div>
+  {% endif %}
+
+  </body>
+</html>
