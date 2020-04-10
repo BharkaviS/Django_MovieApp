@@ -1,4 +1,5 @@
 # Django_MovieApp
+
 Frontpage
 
 ![Screenshot (1)](https://user-images.githubusercontent.com/41267360/78996682-b6aca280-7b62-11ea-8959-e9121baf6f22.png)
