@@ -1,6 +1,6 @@
 # Django_MovieApp
 
-Frontpage
+1)Frontpage
 
 ![Screenshot (1)](https://user-images.githubusercontent.com/41267360/78996682-b6aca280-7b62-11ea-8959-e9121baf6f22.png)
 
@@ -9,7 +9,7 @@ Frontpage
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 
-View of a particular movie listing.
+2)View of a particular movie listing.
 
 ![Screenshot (3)](https://user-images.githubusercontent.com/41267360/78996786-f7a4b700-7b62-11ea-912e-0445c2635967.png)
 
